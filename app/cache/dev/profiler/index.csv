@@ -1,0 +1,13 @@
+25dbc2,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/,1488192510,
+7b8581,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=5&manager=snapshot&page_id=1&updated_at=1488191140,1488192513,
+31693b,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=6&manager=snapshot&page_id=1&updated_at=1488191140,1488192513,
+c8a45a,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/,1488192568,
+dfc53f,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=5&manager=snapshot&page_id=1&updated_at=1488191140,1488192570,
+63e2cc,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=6&manager=snapshot&page_id=1&updated_at=1488191140,1488192570,
+4a6bb3,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/login?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DFOSUserBundle%253ARegistration%253Aregister,1488192572,19f4b7
+19f4b7,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/login,1488192572,
+c12426,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=5&manager=snapshot&page_id=1&updated_at=1488191140,1488192574,
+d94287,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=6&manager=snapshot&page_id=1&updated_at=1488191140,1488192574,
+cca870,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/user,1488192579,
+fe8457,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=5&manager=snapshot&page_id=1&updated_at=1488191140,1488192581,
+da7ba7,127.0.0.1,GET,http://sonata-3.loc/app_dev.php/sonata/page/cache/js-async?block_id=6&manager=snapshot&page_id=1&updated_at=1488191140,1488192581,

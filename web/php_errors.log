@@ -1,0 +1,127 @@
+[27-Feb-2017 13:18:58 Europe/Moscow] PHP Fatal error:  Uncaught InvalidArgumentException: The file "parameters.yml" does not exist (in: /var/www/sonata-3/app/config, ). in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Config/FileLocator.php:68
+Stack trace:
+#0 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Config/FileLocator.php(54): Symfony\Component\Config\FileLocator->locate('parameters.yml', '/var/www/sonata...', false)
+#1 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Config/Loader/FileLoader.php(90): Symfony\Component\HttpKernel\Config\FileLocator->locate('parameters.yml', '/var/www/sonata...', false)
+#2 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/YamlFileLoader.php(102): Symfony\Component\Config\Loader\FileLoader->import('parameters.yml', NULL, false, '/var/www/sonata...')
+#3 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/YamlFileLoader.php(52): Symfony\Component\DependencyInjection\Loader\YamlFileLoader->parse in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Config/Loader/FileLoader.php on line 120
+[27-Feb-2017 13:21:07 Europe/Moscow] PHP Fatal error:  Uncaught Doctrine\Common\Annotations\AnnotationException: You have to enable opcache.load_comments=1 or zend_optimizerplus.load_comments=1. in /var/www/sonata-3/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php:193
+Stack trace:
+#0 /var/www/sonata-3/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationReader.php(171): Doctrine\Common\Annotations\AnnotationException::optimizerPlusLoadComments()
+#1 [internal function]: Doctrine\Common\Annotations\AnnotationReader->__construct()
+#2 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerBuilder.php(964): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerBuilder.php(1011): Symfony\Component\DependencyInjection\ContainerBuilder->createService(Object(Symfony\Component\DependencyInjection\Definition), NULL)
+#4 [internal function]: Symfony\Component\DependencyInjection\ContainerBuilder->resolveServi in /var/www/sonata-3/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php on line 193
+[27-Feb-2017 13:34:31 Europe/Moscow] PHP Fatal error:  Uncaught InvalidArgumentException: The directory "/var/www/sonata-3/app/cache/prod/jms_serializer" is not writable. in /var/www/sonata-3/vendor/jms/metadata/src/Metadata/Cache/FileCache.php:17
+Stack trace:
+#0 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(6647): Metadata\Cache\FileCache->__construct('/var/www/sonata...')
+#1 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getJmsSerializer_MetadataFactoryService()
+#2 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(1749): Symfony\Component\DependencyInjection\Container->get('jms_serializer....')
+#3 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getJmsSerializerService()
+#4 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(3672): Symfony\Component\DependencyInjection\Container->get('jms_serializer')
+#5 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getSonata_EcommerceDemo_Product_Goodie_TypeService()
+#6 /var/www/sonata-3/app/cache/prod/appProdProj in /var/www/sonata-3/vendor/jms/metadata/src/Metadata/Cache/FileCache.php on line 17
+[27-Feb-2017 13:35:00 Europe/Moscow] PHP Fatal error:  Uncaught InvalidArgumentException: The directory "/var/www/sonata-3/app/cache/prod/jms_serializer" is not writable. in /var/www/sonata-3/vendor/jms/metadata/src/Metadata/Cache/FileCache.php:17
+Stack trace:
+#0 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(6647): Metadata\Cache\FileCache->__construct('/var/www/sonata...')
+#1 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getJmsSerializer_MetadataFactoryService()
+#2 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(1749): Symfony\Component\DependencyInjection\Container->get('jms_serializer....')
+#3 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getJmsSerializerService()
+#4 /var/www/sonata-3/app/cache/prod/appProdProjectContainer.php(3672): Symfony\Component\DependencyInjection\Container->get('jms_serializer')
+#5 /var/www/sonata-3/app/bootstrap.php.cache(2097): appProdProjectContainer->getSonata_EcommerceDemo_Product_Goodie_TypeService()
+#6 /var/www/sonata-3/app/cache/prod/appProdProj in /var/www/sonata-3/vendor/jms/metadata/src/Metadata/Cache/FileCache.php on line 17
+[27-Feb-2017 13:47:38 Europe/Moscow] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sonata-3/app/logs/app_dev.log" could not be opened: failed to open stream: Permission denied in /var/www/sonata-3/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:84
+Stack trace:
+#0 /var/www/sonata-3/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/sonata-3/vendor/monolog/monolog/src/Monolog/Logger.php(265): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/sonata-3/vendor/monolog/monolog/src/Monolog/Logger.php(459): Monolog\Logger->addRecord(100, 'Notified event ...', Array)
+#3 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php(237): Monolog\Logger->debug('Notified event ...')
+#4 /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php(119): Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->postPro in /var/www/sonata-3/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 84
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP ParseError:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /var/www/sonata-3/vendor/sonata-project/user-bundle/Controller/AdminSecurityController.php on line 29
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   1. {main}() /var/www/sonata-3/web/app.php:0
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/sonata-3/web/app.php:20
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:2377
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:3133
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /var/www/sonata-3/app/bootstrap.php.cache:2984
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /var/www/sonata-3/app/bootstrap.php.cache:3015
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/ControllerResolver.php:80
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   8. class_exists() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerResolver.php:75
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   9. spl_autoload_call() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerResolver.php:75
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP  10. Composer\Autoload\ClassLoader->loadClass() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerResolver.php:75
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP  11. Composer\Autoload\includeFile() /var/www/sonata-3/vendor/composer/ClassLoader.php:301
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP TypeError:  Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of ParseError given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP   1. Symfony\Component\Debug\ErrorHandler->handleException() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:0
+[27-Feb-2017 13:50:03 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of ParseError given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:436
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handleException(Object(ParseError))
+#1 {main}
+  thrown in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP Error:  Call to undefined method Knp\Menu\MenuItem::setCurrentUri() in /var/www/sonata-3/vendor/sonata-project/user-bundle/Block/ProfileMenuBlockService.php on line 91
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   1. {main}() /var/www/sonata-3/web/app.php:0
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/sonata-3/web/app.php:20
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:2377
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:3133
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /var/www/sonata-3/app/bootstrap.php.cache:2984
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   6. call_user_func_array:{/var/www/sonata-3/app/bootstrap.php.cache:3022}() /var/www/sonata-3/app/bootstrap.php.cache:3022
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   7. Sonata\UserBundle\Controller\ProfileFOSUser1Controller->showAction() /var/www/sonata-3/app/bootstrap.php.cache:3022
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\Controller->render() /var/www/sonata-3/vendor/sonata-project/user-bundle/Controller/ProfileFOSUser1Controller.php:44
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   9. Symfony\Bundle\TwigBundle\TwigEngine->renderResponse() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php:175
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  10. Symfony\Bundle\TwigBundle\TwigEngine->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:92
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  11. Symfony\Bridge\Twig\TwigEngine->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:67
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  12. Twig_Template->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bridge/Twig/TwigEngine.php:50
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  13. Twig_Template->display() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:274
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  14. Twig_Template->displayWithErrorHandling() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:263
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  15. __TwigTemplate_01e81d6e492d7d30bdb9b6430d1ede4715d62754a245d7ebb96e4c5cf3ddb77c->doDisplay() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:289
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  16. Twig_Template->display() /var/www/sonata-3/app/cache/prod/twig/01/e8/1d6e492d7d30bdb9b6430d1ede4715d62754a245d7ebb96e4c5cf3ddb77c.php:32
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  17. Twig_Template->displayWithErrorHandling() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:263
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  18. __TwigTemplate_fe7b930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73->doDisplay() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:289
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  19. Twig_Template->displayBlock() /var/www/sonata-3/app/cache/prod/twig/fe/7b/930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73.php:39
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  20. __TwigTemplate_fe7b930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73->block_sonata_profile_menu() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:154
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  21. Sonata\BlockBundle\Templating\Helper\BlockHelper->render() /var/www/sonata-3/app/cache/prod/twig/fe/7b/930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73.php:92
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  22. Sonata\BlockBundle\Block\BlockRenderer->render() /var/www/sonata-3/vendor/sonata-project/block-bundle/Templating/Helper/BlockHelper.php:373
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  23. Sonata\BlockBundle\Block\Service\MenuBlockService->execute() /var/www/sonata-3/vendor/sonata-project/block-bundle/Block/BlockRenderer.php:87
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP  24. Sonata\UserBundle\Block\ProfileMenuBlockService->getMenu() /var/www/sonata-3/vendor/sonata-project/block-bundle/Block/Service/MenuBlockService.php:66
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP TypeError:  Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of Error given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP   1. Symfony\Component\Debug\ErrorHandler->handleException() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:0
+[27-Feb-2017 14:00:52 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of Error given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:436
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handleException(Object(Error))
+#1 {main}
+  thrown in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP Error:  Call to undefined method Knp\Menu\MenuItem::setCurrentUri() in /var/www/sonata-3/vendor/sonata-project/user-bundle/Block/ProfileMenuBlockService.php on line 91
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   1. {main}() /var/www/sonata-3/web/app.php:0
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/sonata-3/web/app.php:20
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:2377
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/sonata-3/app/bootstrap.php.cache:3133
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /var/www/sonata-3/app/bootstrap.php.cache:2984
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   6. call_user_func_array:{/var/www/sonata-3/app/bootstrap.php.cache:3022}() /var/www/sonata-3/app/bootstrap.php.cache:3022
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   7. Sonata\OrderBundle\Controller\OrderController->viewAction() /var/www/sonata-3/app/bootstrap.php.cache:3022
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\Controller->render() /var/www/sonata-3/vendor/sonata-project/ecommerce/src/OrderBundle/Controller/OrderController.php:75
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   9. Symfony\Bundle\TwigBundle\TwigEngine->renderResponse() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php:175
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  10. Symfony\Bundle\TwigBundle\TwigEngine->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:92
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  11. Symfony\Bridge\Twig\TwigEngine->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/TwigEngine.php:67
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  12. Twig_Template->render() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Bridge/Twig/TwigEngine.php:50
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  13. Twig_Template->display() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:274
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  14. Twig_Template->displayWithErrorHandling() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:263
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  15. __TwigTemplate_a8a746898ce0a08ea197e26a63ba5cccd461875e086700f9601e04e9b01c79c0->doDisplay() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:289
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  16. Twig_Template->display() /var/www/sonata-3/app/cache/prod/twig/a8/a7/46898ce0a08ea197e26a63ba5cccd461875e086700f9601e04e9b01c79c0.php:47
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  17. Twig_Template->displayWithErrorHandling() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:263
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  18. __TwigTemplate_fe7b930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73->doDisplay() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:289
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  19. Twig_Template->displayBlock() /var/www/sonata-3/app/cache/prod/twig/fe/7b/930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73.php:39
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  20. __TwigTemplate_fe7b930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73->block_sonata_profile_menu() /var/www/sonata-3/vendor/twig/twig/lib/Twig/Template.php:154
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  21. Sonata\BlockBundle\Templating\Helper\BlockHelper->render() /var/www/sonata-3/app/cache/prod/twig/fe/7b/930c9ac3d4517b53c618fc5a725e51edc1d96881cc7d9d1161d101440c73.php:92
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  22. Sonata\BlockBundle\Block\BlockRenderer->render() /var/www/sonata-3/vendor/sonata-project/block-bundle/Templating/Helper/BlockHelper.php:373
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  23. Sonata\BlockBundle\Block\Service\MenuBlockService->execute() /var/www/sonata-3/vendor/sonata-project/block-bundle/Block/BlockRenderer.php:87
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP  24. Sonata\UserBundle\Block\ProfileMenuBlockService->getMenu() /var/www/sonata-3/vendor/sonata-project/block-bundle/Block/Service/MenuBlockService.php:66
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP TypeError:  Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of Error given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP Stack trace:
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP   1. Symfony\Component\Debug\ErrorHandler->handleException() /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:0
+[27-Feb-2017 14:00:53 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Symfony\Component\Debug\ErrorHandler::handleException() must be an instance of Exception, instance of Error given in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php:436
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handleException(Object(Error))
+#1 {main}
+  thrown in /var/www/sonata-3/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php on line 436
